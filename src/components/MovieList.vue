@@ -1,10 +1,13 @@
 <template>
-  <h3>Movie List</h3>
+  <item-list name="Movie"></item-list>
 </template>
 
 <script>
+import ItemList from "./ItemList.vue";
+
 export default {
   name: "MovieList",
+  components: { ItemList },
 };
 </script>
 

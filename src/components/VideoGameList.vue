@@ -1,10 +1,13 @@
 <template>
-  <h3>Video Game List</h3>
+  <item-list name="Video Game"></item-list>
 </template>
 
 <script>
+import ItemList from "./ItemList.vue";
+
 export default {
   name: "VideoGameList",
+  components: { ItemList },
 };
 </script>
 
