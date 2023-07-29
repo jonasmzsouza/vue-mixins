@@ -5,8 +5,10 @@ export default {
   }),
   methods: {
     addItem() {
-      this.items.push(this.item);
-      this.item = "";
+      if (this.item) {
+        this.items.push(this.item);
+        this.item = "";
+      }
     },
     removeItem() {
       this.items.pop();
